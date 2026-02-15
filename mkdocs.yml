@@ -1,0 +1,37 @@
+site_name: "Erik Sangeorzan: Engineering Portfolio"
+site_description: Selected embedded systems and automotive audio projects
+site_url: https://ejsang.github.io/erik-sangeorzan-portfolio-harman/
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - include-markdown
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - codehilite
+  - tables
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Role Fit: role-fit.md
+  - Resume & Cover Letter: resume-cover.md
+  - Projects:
+      - Index: projects/index.md
+      - Real-Time Audio Separation: projects/real-time-audio-separation.md
+      - Stratum Synthesizer: projects/stratum-synthesizer.md
+      - Zumo Shield Robot: projects/zumo-shield-robot.md
+      - "Toyota Auto-Validation (HARMAN)": projects/toyota-auto-validation.md
+      - "Analyzing Tennis Matches (MATLAB)": projects/tennis-audio-analysis.md
