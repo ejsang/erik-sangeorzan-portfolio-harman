@@ -1,23 +1,25 @@
 # Erik Sangeorzan: Engineering Portfolio
 
-Welcome to my portfolio. This site showcases selected projects in embedded systems, audio processing, and automotive software engineering.
+<img src="https://ejsang.github.io/erik-sangeorzan-portfolio/assets/profile-photo/pfp.jpg" alt="Erik Sangeorzan" width="150" style="border-radius: 50%; float: right; margin-left: 20px;">
 
-## Featured Projects
+**Target:** Principal Engineer, Audio Systems (HARMAN)
 
-- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)** – Low-latency embedded audio capture and processing with I2S and multitasking
-- **[Stratum Synthesizer](projects/stratum-synthesizer.md)** – Assembly-level audio synthesis engine with bare-metal drivers
-- **[Toyota Auto-Validation (HARMAN)](projects/toyota-auto-validation.md)** – Automated test framework and validation for embedded automotive systems
-- **[Zumo Shield Robot](projects/zumo-shield-robot.md)** – Real-time embedded control with hardware timers and PWM
-- **[Analyzing Tennis Matches (Audio DSP)](projects/tennis-audio-analysis.md)** – Signal processing and algorithm prototyping in MATLAB
+**Core:** C/C++ systems, protocol conformance, deterministic CI test harnesses
 
-## Alignment with HARMAN Roles
+**Audio:** HARMAN acoustics + embedded audio pipeline projects
 
-See **[Role Fit](role-fit.md)** for a detailed mapping of project experience to HARMAN's Principal Engineer job requirements (automotive audio systems, embedded DSP, real-time systems, and automotive diagnostics).
+[Resume (PDF)](assets/Resume.pdf){:target="_blank" .md-button .md-button--primary}
 
-## About Me
+[Cover Letter (PDF)](assets/HarmanCoverLetter.pdf){:target="_blank" .md-button}
 
-I'm an embedded systems engineer with deep experience in audio processing, real-time firmware development, and automotive systems. My work spans low-level hardware drivers, audio signal processing, and system-level validation and testing.
+[Top Project: Real-Time Audio Separation](projects/real-time-audio-separation.md){:target="_blank" .md-button}
+
+Welcome to my engineering portfolio showcasing selected projects in embedded software, audio processing, and robotics. Each project page includes a structured **Problem, Approach, and Results** summary, technical details, and downloadable artifacts.
+
+## Quick Navigation
+
+- **[Projects](projects/index.md)**: Browse all featured projects
+- **[Role Fit](role-fit.md)**: Mapping to HARMAN Principal Engineer requirements
+- **[Resume & Cover Letter](resume-cover.md)**: Tailored application materials
 
 ---
-
-**[View my Resume & Cover Letter](resume-cover.md)** or explore individual projects for detailed design notes, code snippets, and results.
