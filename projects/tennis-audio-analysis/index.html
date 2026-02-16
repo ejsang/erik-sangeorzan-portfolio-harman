@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Selected embedded systems and automotive audio projects">
+        <meta name="description" content="Selected projects and case studies">
       
       
       
@@ -64,6 +64,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#analyzing-tennis-matches-based-on-audio-matlab" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -471,6 +476,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analyzing Tennis Matches (MATLAB)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -488,6 +513,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills demonstrated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-is-relevant-to-harman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this is relevant to HARMAN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project website
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -518,6 +595,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills demonstrated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-is-relevant-to-harman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this is relevant to HARMAN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project website
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -534,56 +654,25 @@
 
 
 
-  <h1>Analyzing Tennis Matches (MATLAB)</h1>
-
-<div class="codehilite"><pre><span></span><code><span class="gh"># Analyzing Tennis Matches Based on Audio (MATLAB)</span>
-
-<span class="gs">**Summary:**</span> A signal processing project using MATLAB to analyze audio from tennis matches to detect ball hits, identify &quot;out&quot; calls vs. applause, and track game score automatically.
-
-<span class="gs">**Problem:**</span> Automate the tracking of tennis match events and scoring using only audio cues.
-
-<span class="gs">**Approach:**</span> Developed MATLAB algorithms to detect transients (ball hits), spectral features for applause vs. net hits, and implemented a state machine to track scoring.
-
-<span class="gs">**Results:**</span> Successfully detected ball hits and applause in test clips; identified limitations in net hit detection for specific rallies.
-
----
-
-<span class="gu">### Skills demonstrated</span>
-
-<span class="k">-</span><span class="w"> </span>Audio Signal Processing (MATLAB)
-<span class="k">-</span><span class="w"> </span>Algorithm Development (transient detection, spectral analysis)
-<span class="k">-</span><span class="w"> </span>State Machine Logic for scoring
-
-<span class="gu">### Why this is relevant to HARMAN</span>
-
-<span class="k">-</span><span class="w"> </span>Demonstrates core DSP algorithm development: transient detection, spectral analysis, and feature extraction—skills directly transferable to automotive audio processing systems.
-<span class="k">-</span><span class="w"> </span>Shows experience in prototyping audio signal processing algorithms before implementation.
-
-<span class="gu">### Project website</span>
-
-For a detailed breakdown of the methodology and results, visit the <span class="gs">**[project website](https://ejsang.wixsite.com/eecs351project){:target=&quot;_blank&quot;}**</span>.
-
-<span class="gu">### Limitations &amp; Fix Plan</span>
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**Limitation:**</span> The current algorithm misses a net hit in Rally 4, causing a scoring drift in subsequent events.
-<span class="k">-</span><span class="w"> </span><span class="gs">**Fix Plan:**</span> Implement a stricter spectral template match for &quot;net hits&quot; to distinguish them from similar short-duration transients.
-<span class="k">-</span><span class="w"> </span><span class="gs">**Verification:**</span> Add unit tests with synthetic &quot;net hit&quot; audio clips to verify detection thresholding.
-
-<span class="gu">### How to run / reproduce</span>
-
-<span class="k">-</span><span class="w"> </span>Requirements: MATLAB.
-<span class="k">-</span><span class="w"> </span>Run <span class="sb">`main.m`</span> in MATLAB.
-<span class="k">-</span><span class="w"> </span>The script analyzes the audio, prints the game score to the console, and generates plots for detected events.
-
-<span class="gu">### Downloads</span>
-
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Code (zip)</span>](<span class="na">../assets/tennis-audio-analysis/tennis-audio-code.zip</span>){:target=&quot;_blank&quot;}
-
-<span class="gu">### What to inspect</span>
-
-<span class="k">-</span><span class="w"> </span>Check <span class="sb">`findBallHit.m`</span> to see the transient detection logic.
-<span class="k">-</span><span class="w"> </span>See <span class="sb">`main.m`</span> for the integration of detection algorithms into the game loop.
-</code></pre></div>
+<h1 id="analyzing-tennis-matches-based-on-audio-matlab">Analyzing Tennis Matches Based on Audio (MATLAB)<a class="headerlink" href="#analyzing-tennis-matches-based-on-audio-matlab" title="Permanent link">&para;</a></h1>
+<p><strong>Summary:</strong> A signal processing project using MATLAB to analyze audio from tennis matches to detect ball hits, identify "out" calls vs. applause, and track game score automatically.</p>
+<p><strong>Problem:</strong> Automate the tracking of tennis match events and scoring using only audio cues.</p>
+<p><strong>Approach:</strong> Developed MATLAB algorithms to detect transients (ball hits), spectral features for applause vs. net hits, and implemented a state machine to track scoring.</p>
+<p><strong>Results:</strong> Successfully detected ball hits and applause in test clips; identified limitations in net hit detection for specific rallies.</p>
+<hr />
+<h3 id="skills-demonstrated">Skills demonstrated<a class="headerlink" href="#skills-demonstrated" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Audio Signal Processing (MATLAB)</li>
+<li>Algorithm Development (transient detection, spectral analysis)</li>
+<li>State Machine Logic for scoring</li>
+</ul>
+<h3 id="why-this-is-relevant-to-harman">Why this is relevant to HARMAN<a class="headerlink" href="#why-this-is-relevant-to-harman" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Demonstrates fundamental audio signal processing and algorithm development skills using MATLAB (DSP prototyping).</li>
+</ul>
+<h3 id="project-website">Project website<a class="headerlink" href="#project-website" title="Permanent link">&para;</a></h3>
+<p>For a detailed breakdown of the methodology and results, visit the <strong><a href="https://ejsang.wixsite.com/eecs351project" target="_blank">project website</a></strong>.</p>
+<hr />
 
 
 

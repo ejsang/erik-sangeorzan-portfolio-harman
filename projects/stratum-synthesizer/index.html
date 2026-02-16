@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Selected embedded systems and automotive audio projects">
+        <meta name="description" content="Selected projects and case studies">
       
       
       
@@ -66,6 +66,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#stratum-synthesizer-assembly" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -389,6 +394,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stratum Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -406,6 +431,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills demonstrated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-is-relevant-to-harman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this is relevant to HARMAN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#driver-interface-sketch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Driver Interface Sketch
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -520,6 +597,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills demonstrated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-is-relevant-to-harman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this is relevant to HARMAN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#driver-interface-sketch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Driver Interface Sketch
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -536,35 +656,24 @@
 
 
 
-  <h1>Stratum Synthesizer</h1>
-
-<div class="codehilite"><pre><span></span><code><span class="gh"># Stratum Synthesizer (Assembly)</span>
-
-<span class="gs">**Summary:**</span> A hand-crafted audio synthesizer implemented largely in assembly with low-level drivers for speaker output, SD card access, SDRAM, and touchscreen I/O - focused on efficiency and driver-level control.
-
-<span class="gs">**Problem:**</span> Produce a functional synthesizer on constrained embedded hardware with multiple instrument voices and low-latency control.
-
-<span class="gs">**Approach:**</span> Implement synthesis routines and driver code in assembly for tight control over timing and memory; build drivers for SD I/O and speaker output.
-
-<span class="gs">**Results:**</span> Full synthesizer with multiple instruments and a touchscreen interface; source demonstrates low-level driver work and audio path implementation.
-
----
-
-<span class="gu">### Skills demonstrated</span>
-
-<span class="k">-</span><span class="w"> </span>Assembly-level optimization and hardware driver development
-<span class="k">-</span><span class="w"> </span>Real-time audio signal generation and low-latency control
-<span class="k">-</span><span class="w"> </span>Debugging constrained systems and interfacing with peripherals
-
-<span class="gu">### Why this is relevant to HARMAN</span>
-
-<span class="k">-</span><span class="w"> </span>Shows deep expertise in low-level embedded audio engineering: driver development for audio hardware (speaker output, peripheral interfaces), real-time constraints, and efficient use of constrained memory.
-<span class="k">-</span><span class="w"> </span>Demonstrates understanding of audio signal path from synthesis through hardware interface—critical for automotive audio systems.
-
-<span class="gu">### Driver Interface Sketch</span>
-
-<span class="sb">```c</span>
-<span class="c1">// Pseudocode illustrating the driver interface logic implemented in assembly</span>
+<h1 id="stratum-synthesizer-assembly">Stratum Synthesizer (Assembly)<a class="headerlink" href="#stratum-synthesizer-assembly" title="Permanent link">&para;</a></h1>
+<p><strong>Summary:</strong> A hand-crafted audio synthesizer implemented largely in assembly with low-level drivers for speaker output, SD card access, SDRAM, and touchscreen I/O - focused on efficiency and driver-level control.</p>
+<p><strong>Problem:</strong> Produce a functional synthesizer on constrained embedded hardware with multiple instrument voices and low-latency control.</p>
+<p><strong>Approach:</strong> Implement synthesis routines and driver code in assembly for tight control over timing and memory; build drivers for SD I/O and speaker output.</p>
+<p><strong>Results:</strong> Full synthesizer with multiple instruments and a touchscreen interface; source demonstrates low-level driver work and audio path implementation.</p>
+<hr />
+<h3 id="skills-demonstrated">Skills demonstrated<a class="headerlink" href="#skills-demonstrated" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Assembly-level optimization and hardware driver development</li>
+<li>Real-time audio signal generation and low-latency control</li>
+<li>Debugging constrained systems and interfacing with peripherals</li>
+</ul>
+<h3 id="why-this-is-relevant-to-harman">Why this is relevant to HARMAN<a class="headerlink" href="#why-this-is-relevant-to-harman" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Shows low-level embedded audio engineering and driver development experience (Speaker PWM, SD Card SPI, Touchscreen I2C) important for firmware that directly handles audio devices and peripheral interfaces.</li>
+</ul>
+<h3 id="driver-interface-sketch">Driver Interface Sketch<a class="headerlink" href="#driver-interface-sketch" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="c1">// Pseudocode illustrating the driver interface logic implemented in assembly</span>
 <span class="c1">// See &#39;speaker_driver.e&#39; for the actual assembly implementation</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">Audio_ISR</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -580,26 +689,6 @@
 <span class="w">        </span><span class="n">Write_Reg</span><span class="p">(</span><span class="n">AUDIO_DATA_REG</span><span class="p">,</span><span class="w"> </span><span class="n">sample</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-<span class="sb">```</span>
-
-<span class="gu">### How to run / reproduce</span>
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**Target Hardware:**</span> Nios II soft-core processor on DE1-SoC FPGA (Altera).
-<span class="k">-</span><span class="w"> </span><span class="gs">**Toolchain:**</span> See <span class="sb">`Stratum Written Report.pdf`</span> for details. The project was built and tested on the original target hardware.
-<span class="k">-</span><span class="w"> </span>To run on target hardware:
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>Copy <span class="sb">`combined.raw`</span> to the root of an SD card used by the target board.
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>Load <span class="sb">`test_top.e`</span> (or <span class="sb">`test_GUI.e`</span> for interactive tests) as the main program using the course toolchain/toolchain loader.
-
-<span class="gu">### Downloads</span>
-
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Stratum Written Report (PDF)</span>](<span class="na">../assets/stratum-synthesizer/Stratum Written Report.pdf</span>){:target=&quot;_blank&quot;}
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Presentation (PPTX)</span>](<span class="na">../assets/stratum-synthesizer/Stratum Presentation (download to avoid format issues</span>).pptx){:target=&quot;_blank&quot;}
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Code (zip)</span>](<span class="na">../assets/stratum-synthesizer/stratum-code.zip</span>){:target=&quot;_blank&quot;}
-
-<span class="gu">### What to inspect</span>
-
-<span class="k">-</span><span class="w"> </span>Read the <span class="gs">**Stratum Written Report**</span> for architecture and driver design notes.
-<span class="k">-</span><span class="w"> </span>Inspect <span class="sb">`speaker_driver.e`</span>, <span class="sb">`sd_read_driver.e`</span>, and the <span class="sb">`synth`</span> modules inside the code zip to see low-level driver logic and instrument synthesis routines.
 </code></pre></div>
 
 

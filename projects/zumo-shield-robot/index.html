@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Selected embedded systems and automotive audio projects">
+        <meta name="description" content="Selected projects and case studies">
       
       
       
@@ -66,6 +66,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#zumo-shield-robot-navigation-c" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -417,6 +422,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zumo Shield Robot
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -434,6 +459,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills demonstrated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-is-relevant-to-harman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this is relevant to HARMAN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Procedure
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -520,6 +597,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills demonstrated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-is-relevant-to-harman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this is relevant to HARMAN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Procedure
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -536,53 +656,29 @@
 
 
 
-  <h1>Zumo Shield Robot</h1>
-
-<div class="codehilite"><pre><span></span><code><span class="gh"># Zumo Shield Robot Navigation (C)</span>
-
-<span class="gs">**Summary:**</span> STM32-based robot navigation project showing motor control, sensor IO, PWM, timers, and UART telemetry using the STM32 HAL and C.
-
-<span class="gs">**Problem:**</span> Implement reliable line-following and navigation on a Zumo robot using the STM32 microcontroller.
-
-<span class="gs">**Approach:**</span> Use STM32 HAL to manage PWM motor control, GPIO sensors, timers and UART for debug telemetry; implement sensor scanning and corrective control logic in C.
-
-<span class="gs">**Results:**</span> Working line-following implementation with telemetry and documented firmware (<span class="sb">`main.c`</span>).
-
----
-
-<span class="gu">### Skills demonstrated</span>
-
-<span class="k">-</span><span class="w"> </span>Embedded C programming on STM32 (PWM, timers, UART, GPIO)
-<span class="k">-</span><span class="w"> </span>Low-level hardware control and real-time loop design for control systems
-<span class="k">-</span><span class="w"> </span>Hardware debugging and interfacing with sensors and actuators
-
-<span class="gu">### Why this is relevant to HARMAN</span>
-
-<span class="k">-</span><span class="w"> </span>Demonstrates embedded firmware development fundamentals: hardware driver usage, PWM/timing control, and real-time control loops—all essential for automotive embedded systems.
-<span class="k">-</span><span class="w"> </span>UART telemetry debugging and hardware profiling skills transfer directly to embedded audio systems development.
-
-<span class="gu">### Test Procedure</span>
-
-<span class="k">1.</span> <span class="gs">**Unit Test:**</span> Verify individual sensor readings via UART output while manually moving the robot over contrasting surfaces.
-<span class="k">2.</span> <span class="gs">**Integration Test:**</span> Tune PID control loop parameters (Kp, Ki, Kd) using real-time telemetry to achieve stable line tracking at increasing speeds.
-<span class="k">3.</span> <span class="gs">**System Validation:**</span> Run full course navigation tests to verify corner handling and intersection logic.
-
-<span class="gu">### How to run / reproduce</span>
-
-<span class="k">-</span><span class="w"> </span>Open the <span class="sb">`Line follower`</span> project in STM32CubeIDE (the project was created with STM32 Cube tools).
-<span class="k">-</span><span class="w"> </span>Build and flash the firmware to the STM32 (Zumo) board.
-<span class="k">-</span><span class="w"> </span>Open a serial console to the board (LPUART1 at 115200 baud) to view <span class="sb">`printf`</span> telemetry and debug messages.
-<span class="k">-</span><span class="w"> </span>Verify motor and sensor wiring matches pins in <span class="sb">`main.c`</span>; adjust PWM/drive parameters as needed and test in a controlled environment.
-
-<span class="gu">### Downloads &amp; presentation video</span>
-
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Line follower code (zip)</span>](<span class="na">../assets/zumo-shield-robot/zumo-line-follower.zip</span>){:target=&quot;_blank&quot;}
-<span class="k">-</span><span class="w"> </span><span class="gs">**[Presentation video](https://youtu.be/iPAF4b1J8Rs){:target=&quot;_blank&quot;}**</span>
-
-<span class="gu">### What to inspect</span>
-
-<span class="k">-</span><span class="w"> </span>Open <span class="sb">`main.c`</span> in the zip and inspect the sensor scan and correction logic; this is where hardware timing and PWM control are implemented.
-</code></pre></div>
+<h1 id="zumo-shield-robot-navigation-c">Zumo Shield Robot Navigation (C)<a class="headerlink" href="#zumo-shield-robot-navigation-c" title="Permanent link">&para;</a></h1>
+<p><strong>Summary:</strong> STM32-based robot navigation project showing motor control, sensor IO, PWM, timers, and UART telemetry using the STM32 HAL and C.</p>
+<p><strong>Problem:</strong> Implement reliable line-following and navigation on a Zumo robot using the STM32 microcontroller.</p>
+<p><strong>Approach:</strong> Use STM32 HAL to manage PWM motor control, GPIO sensors, timers and UART for debug telemetry; implement sensor scanning and corrective control logic in C.</p>
+<p><strong>Results:</strong> Working line-following implementation with telemetry and documented firmware (<code>main.c</code>).</p>
+<hr />
+<h3 id="skills-demonstrated">Skills demonstrated<a class="headerlink" href="#skills-demonstrated" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Embedded C programming on STM32 (PWM, timers, UART, GPIO)</li>
+<li>Low-level hardware control and real-time loop design for control systems</li>
+<li>Hardware debugging and interfacing with sensors and actuators</li>
+</ul>
+<h3 id="why-this-is-relevant-to-harman">Why this is relevant to HARMAN<a class="headerlink" href="#why-this-is-relevant-to-harman" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Demonstrates embedded firmware development, hardware driver use, and debugging.</li>
+<li><strong>UART telemetry</strong> for debugging and <strong>timing/PWM tuning</strong> directly maps to device firmware development.</li>
+</ul>
+<h3 id="test-procedure">Test Procedure<a class="headerlink" href="#test-procedure" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Unit Test:</strong> Verify individual sensor readings via UART output while manually moving the robot over contrasting surfaces.</li>
+<li><strong>Integration Test:</strong> Tune PID control loop parameters (Kp, Ki, Kd) using real-time telemetry to achieve stable line tracking at increasing speeds.</li>
+<li><strong>System Validation:</strong> Run full course navigation tests to verify corner handling and intersection logic.</li>
+</ol>
 
 
 

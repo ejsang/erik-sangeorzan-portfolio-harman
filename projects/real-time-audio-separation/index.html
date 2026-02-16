@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Selected embedded systems and automotive audio projects">
+        <meta name="description" content="Selected projects and case studies">
       
       
       
@@ -66,6 +66,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#real-time-audio-separation-of-human-voices" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -361,6 +366,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Real-Time Audio Separation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -378,6 +403,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills demonstrated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-is-relevant-to-harman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this is relevant to HARMAN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-run-reproduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to run / reproduce
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-id-improve-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What I'd improve next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloads
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -520,6 +619,71 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills demonstrated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-is-relevant-to-harman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this is relevant to HARMAN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-run-reproduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to run / reproduce
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-id-improve-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What I'd improve next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloads
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -536,74 +700,57 @@
 
 
 
-  <h1>Real-Time Audio Separation</h1>
-
-<div class="codehilite"><pre><span></span><code><span class="gh"># Real-Time Audio Separation of Human Voices</span>
-
-<span class="gs">**Summary:**</span> Real-time source separation project combining embedded Teensy audio acquisition (I2S), UART streaming, Raspberry Pi multicore processing, and a Python GUI for real-time playback and visualization. Demonstrates embedded audio capture, DSP algorithms, synchronization, and performance engineering.
-
-<span class="gs">**Problem:**</span> Build a small-form-factor array to capture and separate human voices in real-time.
-
-<span class="gs">**Approach:**</span> Implement low-latency audio capture on Teensy (I2S), transmit via UART to a Raspberry Pi, perform online ICA/FFT-based processing with multiprocessing, and provide a multithreaded Python GUI for playback/visualization.
-
-<span class="gs">**Results:**</span> Working demo with real-time playback, written report and poster, performance tradeoffs documented.
-
----
-
-<span class="gu">### Skills demonstrated</span>
-
-<span class="k">-</span><span class="w"> </span>C/C++ on embedded platforms (I2S, UART), Python multiprocessing and multithreading
-<span class="k">-</span><span class="w"> </span>Real-time DSP (FFT, ICA), FIR filtering (low-pass)
-<span class="k">-</span><span class="w"> </span>Hardware synchronization using GPIO, performance tuning and profiling
-
-<span class="gu">### Why this is relevant to HARMAN</span>
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**I2S/TDM Audio Capture**</span>: Direct experience with I2S audio streaming, the core interface for automotive audio systems.
-<span class="k">-</span><span class="w"> </span><span class="gs">**Embedded DSP**</span>: Real-time FFT and ICA processing on constrained hardware mirrors work needed for audio processing in in-vehicle infotainment.
-<span class="k">-</span><span class="w"> </span><span class="gs">**Real-time Multitasking**</span>: Managed multiprocessing/multithreading with strict latency and synchronization constraints.
-<span class="k">-</span><span class="w"> </span><span class="gs">**System Integration**</span>: Integrated multiple embedded platforms with careful timing and interface validation.
-
-<span class="gu">### How to run / reproduce</span>
-
-Hardware:
-
-<span class="k">-</span><span class="w"> </span>Teensy boards with Audio Shield (or equivalent), a Raspberry Pi (4 recommended), microphones (or test audio), and a UART connection between Teensy and Pi.
-
-Quick steps:
-
-<span class="k">-</span><span class="w"> </span>Run the self-contained demo: open <span class="sb">`src_computer_runnable_demo/`</span> and follow its README.
-<span class="k">-</span><span class="w"> </span>On the Raspberry Pi (or laptop):
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>Create a Python virtualenv and install dependencies: <span class="sb">`pip install numpy scipy matplotlib pyaudio`</span>
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>Run:
-
-<span class="sb">```bash</span>
-python3<span class="w"> </span>src/multiproc_cogent.py
+<h1 id="real-time-audio-separation-of-human-voices">Real-Time Audio Separation of Human Voices<a class="headerlink" href="#real-time-audio-separation-of-human-voices" title="Permanent link">&para;</a></h1>
+<p><strong>Summary:</strong> Real-time source separation project combining embedded Teensy audio acquisition (I2S), UART streaming, Raspberry Pi multicore processing, and a Python GUI for real-time playback and visualization. Demonstrates embedded audio capture, DSP algorithms, synchronization, and performance engineering.</p>
+<p><strong>Problem:</strong> Build a small-form-factor array to capture and separate human voices in real-time.</p>
+<p><strong>Approach:</strong> Implement low-latency audio capture on Teensy (I2S), transmit via UART to a Raspberry Pi, perform online ICA/FFT-based processing with multiprocessing, and provide a multithreaded Python GUI for playback/visualization.</p>
+<p><strong>Results:</strong> Working demo with real-time playback, written report and poster, performance tradeoffs documented.</p>
+<hr />
+<h3 id="skills-demonstrated">Skills demonstrated<a class="headerlink" href="#skills-demonstrated" title="Permanent link">&para;</a></h3>
+<ul>
+<li>C/C++ on embedded platforms (I2S, UART), Python multiprocessing and multithreading</li>
+<li>Real-time DSP (FFT, ICA), FIR filtering (low-pass)</li>
+<li>Hardware synchronization using GPIO, performance tuning and profiling</li>
+</ul>
+<h3 id="why-this-is-relevant-to-harman">Why this is relevant to HARMAN<a class="headerlink" href="#why-this-is-relevant-to-harman" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Design/develop/test C/C++ embedded component</strong>: Implemented I2S capture and UART streaming firmware.</li>
+<li><strong>System Integration</strong>: Integrated HW/SW system and debugged timing/synchronization issues between microcontroller and processor.</li>
+<li><strong>Real-time multitasking</strong>: Managed multiprocessing/multithreading with strict performance constraints.</li>
+</ul>
+<h3 id="how-to-run-reproduce">How to run / reproduce<a class="headerlink" href="#how-to-run-reproduce" title="Permanent link">&para;</a></h3>
+<p>Hardware:</p>
+<ul>
+<li>Teensy boards with Audio Shield (or equivalent), a Raspberry Pi (4 recommended), microphones (or test audio), and a UART connection between Teensy and Pi.</li>
+</ul>
+<p>Quick steps:</p>
+<ul>
+<li>Run the self-contained demo: open <code>src_computer_runnable_demo/</code> and follow its README.</li>
+<li>On the Raspberry Pi (or laptop):</li>
+<li>Create a Python virtualenv and install dependencies: <code>pip install numpy scipy matplotlib pyaudio</code></li>
+<li>Run:</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>python3<span class="w"> </span>src/multiproc_cogent.py
 python3<span class="w"> </span>src/ui3_1_maxplayback.py
-<span class="sb">```</span>
-
-<span class="k">-</span><span class="w"> </span>On each Teensy: flash <span class="sb">`src/valuecheck.ino`</span> (use Arduino IDE / Teensy Loader) and set I2S/UART parameters as described in <span class="sb">`OVERVIEW.txt`</span>.
-
-<span class="gu">### What I&#39;d improve next</span>
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**Latency Budget**</span>: Quantify and optimize the end-to-end latency budget (currently limited by UART bandwidth).
-<span class="k">-</span><span class="w"> </span><span class="gs">**Buffering Strategy**</span>: Implement circular buffering to reduce jitter and dropouts.
-<span class="k">-</span><span class="w"> </span><span class="gs">**Test Strategy**</span>: Add automated regression tests for the DSP blocks.
-
-<span class="gu">### Downloads</span>
-
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Final report (PDF)</span>](<span class="na">../assets/real-time-audio-separation/2021-Team-2-final.pdf</span>){:target=&quot;_blank&quot;}
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Slide deck (PDF)</span>](<span class="na">../assets/real-time-audio-separation/2021-Team-2-slides.pdf</span>){:target=&quot;_blank&quot;}
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Poster (PDF)</span>](<span class="na">../assets/real-time-audio-separation/2021-Team-2-poster.pdf</span>){:target=&quot;_blank&quot;}
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Demo video (MP4)</span>](<span class="na">../assets/real-time-audio-separation/slide10_video1_final_demo.mp4</span>){:target=&quot;_blank&quot;}
-<span class="k">-</span><span class="w"> </span>[<span class="nt">Runnable demo (zip)</span>](<span class="na">../assets/real-time-audio-separation/real-time-demo.zip</span>){:target=&quot;_blank&quot;}
-
-<span class="gu">### What to inspect</span>
-
-<span class="k">-</span><span class="w"> </span>See the <span class="gs">**Final report**</span> for design decisions, synchronization approach, and performance analysis.
-<span class="k">-</span><span class="w"> </span>Play the <span class="gs">**Demo video**</span> for the live system behavior and slide commentary.
-<span class="k">-</span><span class="w"> </span>Download the <span class="gs">**Runnable demo**</span> to run the self-contained demo locally (instructions in <span class="sb">`USAGE.txt`</span>).
-<span class="k">-</span><span class="w"> </span>Inspect <span class="sb">`src/valuecheck.ino`</span> for Teensy I2S/UART firmware and <span class="sb">`src/multiproc_cogent.py`</span> for the Python multiprocessing implementation.
 </code></pre></div>
+
+<ul>
+<li>On each Teensy: flash <code>src/valuecheck.ino</code> (use Arduino IDE / Teensy Loader) and set I2S/UART parameters as described in <code>OVERVIEW.txt</code>.</li>
+</ul>
+<h3 id="what-id-improve-next">What I'd improve next<a class="headerlink" href="#what-id-improve-next" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Latency Budget</strong>: Quantify and optimize the end-to-end latency budget (currently limited by UART bandwidth).</li>
+<li><strong>Buffering Strategy</strong>: Implement circular buffering to reduce jitter and dropouts.</li>
+<li><strong>Test Strategy</strong>: Add automated regression tests for the DSP blocks.</li>
+</ul>
+<h3 id="downloads">Downloads<a class="headerlink" href="#downloads" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../assets/real-time-audio-separation/2021-Team-2-final.pdf" target="_blank">Final report (PDF)</a></li>
+<li><a href="../assets/real-time-audio-separation/2021-Team-2-slides.pdf" target="_blank">Slide deck (PDF)</a></li>
+<li><a href="../assets/real-time-audio-separation/2021-Team-2-poster.pdf" target="_blank">Poster (PDF)</a></li>
+<li><a href="../assets/real-time-audio-separation/slide10_video1_final_demo.mp4" target="_blank">Demo video (MP4)</a></li>
+<li><a href="../assets/real-time-audio-separation/real-time-demo.zip" target="_blank">Runnable demo (zip)</a></li>
+</ul>
 
 
 
