@@ -1,4 +1,3 @@
-````markdown
 # Real-Time Audio Separation of Human Voices
 
 **Summary:** Real-time source separation project combining embedded Teensy audio acquisition (I2S), UART streaming, Raspberry Pi multicore processing, and a Python GUI for real-time playback and visualization. Demonstrates embedded audio capture, DSP algorithms, synchronization, and performance engineering.
@@ -19,10 +18,9 @@
 
 ### Why this is relevant to HARMAN
 
-- **I2S/TDM Audio Capture**: Direct experience with I2S audio streaming, the core interface for automotive audio systems.
-- **Embedded DSP**: Real-time FFT and ICA processing on constrained hardware mirrors work needed for audio processing in in-vehicle infotainment.
-- **Real-time Multitasking**: Managed multiprocessing/multithreading with strict latency and synchronization constraints.
-- **System Integration**: Integrated multiple embedded platforms with careful timing and interface validation.
+- **Design/develop/test C/C++ embedded component**: Implemented I2S capture and UART streaming firmware.
+- **System Integration**: Integrated HW/SW system and debugged timing/synchronization issues between microcontroller and processor.
+- **Real-time multitasking**: Managed multiprocessing/multithreading with strict performance constraints.
 
 ### How to run / reproduce
 
@@ -57,11 +55,3 @@ python3 src/ui3_1_maxplayback.py
 - [Poster (PDF)](../assets/real-time-audio-separation/2021-Team-2-poster.pdf){:target="_blank"}
 - [Demo video (MP4)](../assets/real-time-audio-separation/slide10_video1_final_demo.mp4){:target="_blank"}
 - [Runnable demo (zip)](../assets/real-time-audio-separation/real-time-demo.zip){:target="_blank"}
-
-### What to inspect
-
-- See the **Final report** for design decisions, synchronization approach, and performance analysis.
-- Play the **Demo video** for the live system behavior and slide commentary.
-- Download the **Runnable demo** to run the self-contained demo locally (instructions in `USAGE.txt`).
-- Inspect `src/valuecheck.ino` for Teensy I2S/UART firmware and `src/multiproc_cogent.py` for the Python multiprocessing implementation.
-````

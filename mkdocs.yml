@@ -1,5 +1,5 @@
 site_name: "Erik Sangeorzan: Engineering Portfolio"
-site_description: Selected embedded systems and automotive audio projects
+site_description: Selected projects and case studies
 site_url: https://ejsang.github.io/erik-sangeorzan-portfolio-harman/
 
 theme:
@@ -13,7 +13,7 @@ theme:
 
 plugins:
   - search
-  - include-markdown
+  - include-markdown  # to pull READMEs and snippets from your repos
 
 markdown_extensions:
   - admonition

@@ -1,4 +1,3 @@
-```markdown
 # Analyzing Tennis Matches Based on Audio (MATLAB)
 
 **Summary:** A signal processing project using MATLAB to analyze audio from tennis matches to detect ball hits, identify "out" calls vs. applause, and track game score automatically.
@@ -19,32 +18,11 @@
 
 ### Why this is relevant to HARMAN
 
-- Demonstrates core DSP algorithm development: transient detection, spectral analysis, and feature extraction—skills directly transferable to automotive audio processing systems.
-- Shows experience in prototyping audio signal processing algorithms before implementation.
+- Demonstrates fundamental audio signal processing and algorithm development skills using MATLAB (DSP prototyping).
 
 ### Project website
 
 For a detailed breakdown of the methodology and results, visit the **[project website](https://ejsang.wixsite.com/eecs351project){:target="_blank"}**.
 
-### Limitations & Fix Plan
+---
 
-- **Limitation:** The current algorithm misses a net hit in Rally 4, causing a scoring drift in subsequent events.
-- **Fix Plan:** Implement a stricter spectral template match for "net hits" to distinguish them from similar short-duration transients.
-- **Verification:** Add unit tests with synthetic "net hit" audio clips to verify detection thresholding.
-
-### How to run / reproduce
-
-- Requirements: MATLAB.
-- Run `main.m` in MATLAB.
-- The script analyzes the audio, prints the game score to the console, and generates plots for detected events.
-
-### Downloads
-
-- [Code (zip)](../assets/tennis-audio-analysis/tennis-audio-code.zip){:target="_blank"}
-
-### What to inspect
-
-- Check `findBallHit.m` to see the transient detection logic.
-- See `main.m` for the integration of detection algorithms into the game loop.
-
-```

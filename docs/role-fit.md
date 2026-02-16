@@ -1,59 +1,43 @@
 # Role Fit: HARMAN Principal Engineer, Audio Systems
 
-**Context:** This page maps HARMAN's Principal Engineer requirements to specific project evidence in this portfolio. Each section corresponds to a key requirement from the job description.
+**Context:** This page maps HARMAN's Principal Engineer requirements to specific project evidence in this portfolio. Each section below corresponds to a key requirement, with links to relevant projects and explanations of how they demonstrate the skill.
 
-> **Professional Experience Note:** My professional experience at Ford involved rigorous embedded systems testing, including protocol conformance testing, packet analysis, and deterministic CI test harnesses. This experience complements the hands-on embedded work demonstrated in these projects.
+> **Professional Experience Note:** While this portfolio showcases academic and personal projects, my professional experience at Ford involved rigorous Ethernet/IP/TCP/UDP protocol conformance testing, packet analysis, and the implementation of deterministic CI test harnesses.
 
-## 8+ years' experience in automotive electronic product development (Audio preferred)
+## Design, develop and test embedded software and associated components for audio products (C/C++)
 
-**Projects:**
-- **[Toyota Auto-Validation (HARMAN)](projects/toyota-auto-validation.md)**: Direct automotive validation experience demonstrating system-level testing and automated reporting for embedded automotive systems.
-- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: Low-latency embedded audio capture and processing—core to automotive infotainment systems.
+- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: Teensy firmware, I2S/UART C/C++ code, Raspberry Pi processing and multithreaded Python demos demonstrating low-latency embedded audio capture and processing.
+- **[Analyzing Tennis Matches Based on Audio](projects/tennis-audio-analysis.md)**: MATLAB-based audio signal processing and algorithm development (transient detection, spectral analysis) relevant to audio product R&D.
+- **[Stratum Synthesizer](projects/stratum-synthesizer.md)**: assembly-level audio engine and drivers showing deep knowledge of audio signal path and constraints.
 
-## Digital Signal Processing (DSP), signal flow design, digital filtering
+## Hardware drivers, embedded software applications, audio and control networking (C/C++)
 
-- **[Analyzing Tennis Matches Based on Audio](projects/tennis-audio-analysis.md)**: MATLAB-based DSP algorithm development including spectral analysis, transient detection, and frequency response design.
-- **[Stratum Synthesizer](projects/stratum-synthesizer.md)**: Assembly-level audio engine demonstrating deep knowledge of signal path and audio processing constraints.
-- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: I2S/TDM-style audio capture with real-time processing on embedded hardware.
+- **[Stratum Synthesizer](projects/stratum-synthesizer.md)**: speaker and SD drivers, low-level peripheral control.
+- **[Zumo Shield Robot](projects/zumo-shield-robot.md)**: STM32 PWM, timers, UART and GPIO; illustrates driver usage and hardware control.
 
-## Audio/acoustic systems and audio quality
+## Real-time, multitasking, and OS concepts (Embedded Linux / threads / synchronization)
 
-- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: Multi-channel audio processing with understanding of signal fidelity and real-time constraints.
-- **[Stratum Synthesizer](projects/stratum-synthesizer.md)**: Direct hardware-level audio synthesis and speaker driver implementation.
-- **[Analyzing Tennis Matches (Audio DSP)](projects/tennis-audio-analysis.md)**: Audio signal quality analysis and algorithm prototyping.
+- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: Embedded Linux user-space on Raspberry Pi + concurrency + synchronization.
+- **[Zumo Shield Robot](projects/zumo-shield-robot.md)**: microcontroller timing/interrupts and real-time control loop design.
 
-## Embedded system issues, real-time debugging, and integration
+## Networking & protocols (UART, I2S, possibility to work with Ethernet/TCP/UDP/Wi-Fi)
 
-- **[Zumo Shield Robot](projects/zumo-shield-robot.md)**: Real-time embedded control with hardware timers, interrupts, and PWM on STM32 microcontroller.
-- **[Stratum Synthesizer](projects/stratum-synthesizer.md)**: Low-level debugging of hardware interfaces (speaker, SD card, touchscreen) and integration of multiple peripherals.
-- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: Multi-processor integration (Teensy + Raspberry Pi), I2S and UART interface management, and embedded Linux integration.
+- **Professional**: Ethernet/IP/TCP/UDP (protocol conformance + packet analysis) - see resume for Ford experience.
+- **Projects**: **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: I2S audio capture and UART streaming; demonstrates embedded audio streaming concepts.
 
-## Audio interfaces (I2S/TDM), audio drivers, fixed-point and floating-point processing
+## Software architecture, design, and testing (reviews, unit/integration tests)
 
-- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: I2S audio capture with Teensy firmware and UART streaming; demonstrates embedded audio streaming and interface management.
-- **[Stratum Synthesizer](projects/stratum-synthesizer.md)**: Low-level peripheral drivers including speaker control and SD card interface.
+- **[Toyota Auto-Validation](projects/toyota-auto-validation.md)**: demonstrates test automation and reporting.
+- **Professional**: Experience with SonarQube rollout, deterministic builds, and harness-based validation.
+- **Process**: I prioritize clear documentation, peer reviews, and testability (see reports included with each project).
+- **Organization**: I estimate, organize, and document tasks as part of the standard engineering workflow.
 
-## Vehicle networking (CAN, MOST), diagnostics (UDS, KWP2000), and system integration
+## Hardware debugging and release processes
 
-- **Professional**: Ford experience with embedded systems and protocol conformance testing provides grounding in automotive communication principles.
-- **[Toyota Auto-Validation](projects/toyota-auto-validation.md)**: System-level validation approach demonstrates understanding of integration and verification across components.
+- **[Zumo Shield Robot](projects/zumo-shield-robot.md)** and **[Stratum Synthesizer](projects/stratum-synthesizer.md)** show hardware bring-up, telemetry, and iterative debugging workflows; [Toyota demo](projects/toyota-auto-validation.md) shows validation and reporting practices.
 
-## Problem solving, communication, and technical specification management
+## Version control and documentation
 
-- **[Toyota Auto-Validation](projects/toyota-auto-validation.md)**: Test automation and reporting framework showing ability to communicate technical results to stakeholders.
-- **Projects**: Each project includes comprehensive documentation, design rationale, and code explanations showing attention to clarity and communication.
-- **Process**: I estimate, organize, and document tasks as part of standard engineering practice.
-
-## C/C++ proficiency and embedded software development
-
-- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: Teensy C++ firmware and Python processing demonstrations.
-- **[Stratum Synthesizer](projects/stratum-synthesizer.md)**: Assembly and C-level driver implementation.
-- **[Zumo Shield Robot](projects/zumo-shield-robot.md)**: Embedded C for microcontroller control.
-- **[Toyota Auto-Validation](projects/toyota-auto-validation.md)**: C# automation framework demonstrating language versatility.
-
-## Hardware debugging with instruments and embedded tools
-
-- **[Zumo Shield Robot](projects/zumo-shield-robot.md)** and **[Stratum Synthesizer](projects/stratum-synthesizer.md)**: Hardware bring-up and telemetry demonstrate use of debugging workflows with hardware interfaces.
-- **[Real-Time Audio Separation](projects/real-time-audio-separation.md)**: Integration of multiple embedded platforms with careful interface validation.
+- Full repositories and README/USAGE/OVERVIEW docs are included with each project; this portfolio itself is version-controlled and deploy-ready.
 
 ---
